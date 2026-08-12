@@ -40,8 +40,51 @@ console.log(booleanIsLoggedIn4); // false
 // 1 => true; 0 => false
 // "abc" => true; "" => false
 
-
+// Convert number to string
 let someNumber = 33; // number
 let stringNumber = String(someNumber);
 console.log(typeof stringNumber); // string
 console.log(stringNumber); // "33"
+
+
+//************************operations*****************************
+let value = 3;
+let negValue = -value; // -3
+console.log(negValue); // -3
+
+// Arithmetic operations in JavaScript:
+console.log("Add: ", (3 + 2)); // 5
+console.log("Subtract: ", (3 - 2)); // 1
+console.log("Multiply: ", (3 * 2)); // 6
+console.log("Divide: ", (3 / 2)); // 1.5
+console.log("Modulus: ", (3 % 2)); // 1
+console.log("Power: ", (3 ** 2)); // 9 (3 to the power of 2)
+
+// String concatenation in JavaScript:
+let str1 = "Hello";
+let str2 = "World";
+let str3 = str1 + " " + str2; // Concatenation
+console.log(str3); // "Hello World"
+
+// String concatenation with numbers:
+console.log("1" + 2); // "12" (string concatenation)
+console.log(1 + "2"); // "12" (string concatenation)
+console.log("1" + 2 + 2); // "122" (string concatenation)
+console.log("1" + (2 + 2)); // "14" (string concatenation, 2+2 is evaluated first)  
+console.log(1 + 2 + "2"); // "32" (number addition, then string concatenation)
+
+
+console.log(+true); // 1 (unary plus converts boolean to number)
+console.log(+false); // 0 (unary plus converts boolean to number)
+console.log(+""); // 0 (unary plus converts empty string to number)
+
+
+// Pre increment and post increment operators:
+let gameCounter = 100;
+console.log(gameCounter); // 100 (initial value)
+console.log(gameCounter++); // 100 (post-increment)
+console.log(gameCounter++); // 101 (post-increment)
+console.log(gameCounter); // 102 (current value after increments)
+
+console.log(++gameCounter); // 103 (pre-increment)
+console.log(++gameCounter); // 104 (pre-increment)
