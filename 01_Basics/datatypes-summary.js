@@ -29,3 +29,24 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
+
+// Memory types
+// Stack (primitive), Heap (non-primitive)
+
+let myYtname = "Kishan"
+let anotherName = "Chandan"
+
+console.log(myYtname);
+console.log(anotherName);
+
+let user1 = {
+    email: "user@google.com",
+    upi: "user@sbi"
+}
+
+let user2 = user1
+user2.email = "kishan@google.com"
+
+console.log(user1.email);
+console.log(user2.email);
+
